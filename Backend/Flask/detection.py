@@ -12,6 +12,20 @@ from tqdm import tqdm
 import cv2
 import requests
 from flask_restful import reqparse, Resource
+import random
+import string
+
+def generate_random_string():
+    # 숫자와 문자를 조합한 문자열 생성
+    characters = string.ascii_letters + string.digits
+
+    # 10자리에서 20자리까지 랜덤한 길이 선택
+    length = random.randint(10, 20)
+
+    # 랜덤한 문자열 생성
+    random_string = ''.join(random.choice(characters) for i in range(length))
+
+    return random_string
 
 class DataGenerator(keras.utils.Sequence):
     'Generates data for Keras'
@@ -225,15 +239,12 @@ palet = [(250, 230, 20), (30, 200, 241), (200, 30, 250), (250,60,20)]
 class Detection(Resource):
     def post(self):
         model = build_model((256, 1600, 1))
-        
-        # 현재 file directory 내부 model-u-NetV5.h5에서 load 해오면 됨.
         model.load_weights('/home/yeojisu/mysite/file/defect-detection/model-u-NetV5.h5')
 
         parser = reqparse.RequestParser()
         parser.add_argument("image_url")
         args = parser.parse_args()
         argument = args["image_url"]
-
         # 외부 URL에서 이미지 가져오기
         image_data = requests.get(argument).content
         # 바이트 스트림으로부터 이미지 디코딩
@@ -292,7 +303,7 @@ class Detection(Resource):
 
         # Transform class to column
         try:
-            test_df['fname'], test_df['cls'] = zip(*test_df['ImageId_ClassId'].str.split('_'))
+            test_df['fname'], test_df['cls'] = zip(*test_df['ImageId_ClassId'].str.rsplit('_', n=1))
         except:
             test_df['fname'], test_df['cls'] = test_df['ImageId'], test_df['ClassId']
 
@@ -312,12 +323,13 @@ class Detection(Resource):
 
         cv2_img = cv2.cvtColor(cv2_img, cv2.COLOR_BGR2RGB)
         cv2_img = cv2.resize(cv2_img, (width, height))
-        predicted_image_name = image_name.split(".")[0]+"_predicted.jpg"
-        # 이미지 저장 
+
+        # 랜덤 이미지 이름 생성
+        predicted_image_name = generate_random_string()+".jpg"
+        # 이미지 저장 예제
         save_path = "/home/yeojisu/mysite/file/defect-detection/image/"+ predicted_image_name
         cv2.imwrite(save_path, cv2_img)
-        
-        # 저장 후 URL로 변환하여 출력
+
         new_url = "https://yeojisu.pythonanywhere.com/image/"+predicted_image_name
         label = test_df.iloc[0].dropna().index.tolist()
         label.remove("defects")
