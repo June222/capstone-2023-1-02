@@ -32,8 +32,20 @@
 <br> 
 
 
+
+
 ## 4. 소개 및 시연 영상
 시연영상
+
+#### 촬영용 App
+
+![촬영 작동 1](https://github.com/pnucse-capstone/capstone-2023-1-02/assets/38900003/50a9d5a9-b219-4995-940f-19c0660757ae)
+
+<br>
+
+#### 태블릿 App
+![작동 리드미 영상](https://github.com/pnucse-capstone/capstone-2023-1-02/assets/38900003/813c7099-fd52-49a1-9464-e0a1de18b792)
+
 
 
 <br> 
