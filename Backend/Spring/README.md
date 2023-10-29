@@ -42,14 +42,19 @@ aws mysql DB와 연동하여 Image 데이터들을 관리하는 API <br>
 <center>출처: https://ultrakain.gitbooks.io/jpa/content/chapter1/chapter1.3.html</center>
 
 <br>
+<br>
 
-> 반복적인 CRUD SQL을 작성하고 객체를 SQL에 매핑하는데 이미 많은 자바 개발자들이 오랫동안 비슷한 고민을 해왔고 문제를 해결하려고 많은 노력을 기울여왔다. 그리고 그 노력의 결정체가 바로 JPA다.
+> 반복적인 CRUD SQL을 작성하고 객체를 SQL에 매핑하는데 이미 많은 자바 개발자들이 오랫동안 문제를 해결하려고 많은 노력을 기울여왔다. 그 노력의 결정체가 바로 JPA다.
 > 
 > 귀찮은 문제들은 이제 JPA에게 맡기고 더 좋은 객체 모델링과 더 많은 테스트를 작성하는데 우리의 시간을 보내자.
 >
 > 개발자는 SQL Mapper가 아니다.
 
-*<div style="text-align:right"> -출처: 자바 ORM 표준 JPA 프로그래밍 / 저자: 김영한 - </div>* <br>
+<br>
+
+<div style="text-align:right"> -출처: 자바 ORM 표준 JPA 프로그래밍 / 저자: 김영한 - </div>
+
+<br>
 
 ## 2. Spring을 왜 사용하였는가?
 
