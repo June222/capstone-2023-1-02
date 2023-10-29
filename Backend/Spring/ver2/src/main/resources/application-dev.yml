@@ -1,0 +1,54 @@
+# 1
+server:
+  servlet:
+    encoding:
+      charset: utf-8
+      force: true
+  port: # 본인이 정할 port 번호 (포트 포워딩 해줘야함)
+
+spring:
+  # 2
+  mustache:
+    servlet:
+      expose-session-attributes: true
+      expose-request-attributes: true
+  # 3
+  datasource:
+
+    # DB 설정
+    url: # DB EndPoint
+    driver-class-name: # com.mysql.cj.jdbc.Driver
+    username: # admin의 ID(내가 설정)
+    password: # admin의 password(내가 설정)
+
+
+  sql:
+    init:
+      data-locations:
+        # 더미 파일 생성
+        # 서버 생성 시에 작성하고 싶은 쿼리문이 있는 경우 실행이 됨.
+        # 서버 재실행시 테이블이 초기화되는 h2 서버의 경우에 유용하게 쓰임
+        #  - classpath:db/data.sql
+
+  # 4
+  jpa:
+    # 8 ddl-auto create 작동 시점을 sql init 보다 빠르게 설정
+    defer-datasource-initialization: true
+
+    hibernate:
+      ddl-auto: none # 시작 시에 Table 재생성
+
+    # 5
+
+    show-sql: true # 쿼리문의 log 남기기
+
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+# 6
+logging:
+  level:
+    '[com.example.demo1]': INFO
+    '[org.hibernate.type]': TRACE

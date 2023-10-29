@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    active:
+      - dev # application-dev.yml 파일의 설정을 따름
+      # ex) - abc 인 경우 => application-abc.yml의 설정을 따름
+      # h2 서버의 설정과 실제 DB 설정을 분리하는데 유용함.
+      # - h2

@@ -1,0 +1,61 @@
+# h2 서버: 본인의 메모리로 DB를 구성. 껏다 켜지면 리셋됨. 디버깅 및 테스트 용으로 적합한 서버
+
+server:
+  servlet:
+    encoding:
+      charset: utf-8
+      force: true
+  port: # 본인이 정할 port 번호 (포트 포워딩 해줘야함)
+
+spring:
+  mustache:
+    servlet:
+      expose-session-attributes: true
+      expose-request-attributes: true
+  datasource:
+    # h2는 embedded database DB를 설치할 필요가 없다.
+    # 개발 환경에서는 jdk만 설치 되어 있으면 실행 가능
+    # 배포 때는 따로 DB를 설치 해줘야 한다.
+    url: jdbc:h2:mem:test;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      # 인터넷 창으로 DB tool에 접근할 수 있다.
+      # localhost:port/h2-console 을 주소창에 쳐서 접근 가능
+      # username-password 는 위에서 작성한 대로 입력
+      enabled: true
+
+
+  sql:
+    init:
+      data-locations:
+      # 더미 파일 생성
+      # 서버 생성 시에 작성하고 싶은 쿼리문이 있는 경우 실행이 됨.
+      # 서버 재실행 시 테이블이 초기화되는 h2 서버의 경우에 유용하게 쓰임
+      #  - classpath:db/data.sql
+
+
+  jpa:
+    # ddl-auto create 작동 시점을 sql init 보다 빠르게 설정
+    defer-datasource-initialization: true
+
+    hibernate:
+      # 서버 재실행 시에 테이블 생성 (drop-create)
+      ddl-auto: create
+
+    # 쿼리문의 log 남기기
+    show-sql: true
+
+    properties:
+      hibernate:
+        format_sql: true
+
+
+# 6
+logging:
+  level:
+    '[com.example.demo1]': INFO
+    '[org.hibernate.type]': TRACE
