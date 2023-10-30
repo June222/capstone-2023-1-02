@@ -14,15 +14,15 @@ Tablet 등 대형 디바이스를 이용하여 사용자가 결함 이미지 데
 
 ## 목차 (이동)
 
-[1. Application 소개](#1-application-소개)
+- [Application 소개](#1-application-소개)
 
-[2. Why Flutter](#2-왜-flutter를-사용하였는가)
+- [Why Flutter](#2-왜-flutter를-사용하였는가)
 
-[3. 사용 방법](#3-사용-방법)
+- [사용 방법](#3-사용-방법)
 
-[4. Contributor & 참고 자료](#4-contributor-및-참고-자료)
+- [Contributor & 참고 자료](#4-contributor-및-참고-자료)
 
-[5. License](#5-license)
+- [License](#5-license)
 
 <br>
 
