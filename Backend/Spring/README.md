@@ -48,8 +48,8 @@ aws mysql DB와 연동하여 Image 데이터들을 관리하는 API <br>
 ## 2. Spring을 왜 사용하였는가?
 
 
-졸업 과제 이전에 Spring 부트캠프가 학교에서 진행되었다. mysql에 workbench를 통해 데이터를 직접 저장해보며 느꼈던 불편함들을 해소해주는 spring framework에 큰 매력을 느꼈고,
-이를 꼭 졸업과제에서 써보고자 하였다. <br>
+- 배포되는 것을 가정할 때, 유지보수 측면에서 엄청난 이점을 지닌다. 구체적으로 select문을 변경하거나 기능을 추가하는 경우 Application Interface는 변경하지 않고, JPA 측 코드 변경만으로 기능을 추가 및 변경할 수 있다.
+
 
 > 촬영용 device에서 mysql에 **데이터를 저장**하고, 
 > 
