@@ -28,6 +28,17 @@ Tablet 등 대형 디바이스를 이용하여 사용자가 결함 이미지 데
 
 ## 1. Application 소개
 
+### 프로젝트 소개
+
+|     항목      |                                                                                                                                           내용                                                                                                                                            |
+|:-----------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|     소개      |                                                                                                                             **유저 친화적인 Tablet Application**                                                                                                                              |
+|    개발 기간    |                                                                                                                                  2023.10.01~2023.10.26                                                                                                                                  |
+| 개발 엔진 및 언어  |                                        <img src="https://img.shields.io/badge/Flutter-blue?style=for-the-badge&logo=flutter&logoColor=white"> <img src="https://img.shields.io/badge/dart-black?style=for-the-badge&logo=dart&logoColor=white">                                         |
+|    제공 기능    |                                                                                              **원하는 기간, 결함 유무, 특정 Label에 따른 데이터를 조회<br/>결함 부위가 표시된 이미지를 확대<br/>Column graph 를 이용한 시각적 표현**                                                                                               |
+| Contributor | <a href="https://github.com/June222"><img src="https://github.com/pnucse-capstone/capstone-2023-1-02/assets/76769044/e8eba3b2-7097-42fc-bb5a-61bfc2872998" width="200px;" alt=""/><br /><sub><b>FE, BE 팀장 : 강준우</b>(github)</sub></a><br /><sub><b>jangtai4@pusan.ac.kr</b></sub><br /> |
+
+
 본 Application 은 'Smart Factory Project' 에서 사용자가 DB의 데이터의 조회와 관리를 도와주는 Application 입니다.
 
 ### 아래의 기능을 제공 합니다.
