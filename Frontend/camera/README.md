@@ -1,8 +1,5 @@
 # Smart Factory-Camera Application 개발 프로젝트
 
-<img src="https://img.shields.io/badge/Flutter-blue?style=for-the-badge&logo=flutter&logoColor=white">
-<img src="https://img.shields.io/badge/dart-blue?style=for-the-badge&logo=dart&logoColor=white">
-
 Flutter를 이용하여 철강 표면 사진을 촬영하고 검출 모델로 전송 및 DB에 저장을 수행하는 Application 개발
 
 <br>
@@ -11,7 +8,7 @@ Flutter를 이용하여 철강 표면 사진을 촬영하고 검출 모델로 �
 
 > 1. 휴대폰의 내장 카메라를 이용하여 철강 표면 이미지를 촬영
 > 2. 팀원이 작성한 REST API를 호출하여 Detection이 완료된 이미지 다운로드
-> 3. DBMS에 데이터를 업로드
+> 3. HTTP 통신을 통해 JPA를 거쳐 DBMS에 데이터를 업로드
 
 <br>
 
@@ -33,13 +30,17 @@ Flutter를 이용하여 철강 표면 사진을 촬영하고 검출 모델로 �
 
 ## 1. Application 소개
 
-본 Application 은 'Smart Factory Project'의 **시연을 위해 제작된 촬영용 Application** 입니다.
- 
-아래 기능을 제공합니다.
+### 프로젝트 소개
 
-1. 내장 카메라를 이용하여 철강 표면 이미지를 촬영 
-2. 검출 확인  
-3. DB에 업로드
+|     항목      |                                                                                                                                           내용                                                                                                                                            |
+|:-----------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|     소개      |                                                                                                                             **시연을 위해 제작된 촬영용 Application**                                                                                                                              |
+|    개발 기간    |                                                                                                                                  2023.10.24~2023.10.26                                                                                                                                  |
+| 개발 엔진 및 언어  |                                        <img src="https://img.shields.io/badge/Flutter-blue?style=for-the-badge&logo=flutter&logoColor=white"> <img src="https://img.shields.io/badge/dart-black?style=for-the-badge&logo=dart&logoColor=white">                                         |
+|    제공 기능    |                                                                                                                         **내장 카메라를 통한 촬영, REST API 호출, DB 업로드**                                                                                                                          |
+| Contributor | <a href="https://github.com/June222"><img src="https://github.com/pnucse-capstone/capstone-2023-1-02/assets/76769044/e8eba3b2-7097-42fc-bb5a-61bfc2872998" width="200px;" alt=""/><br /><sub><b>FE, BE 팀장 : 강준우</b>(github)</sub></a><br /><sub><b>jangtai4@pusan.ac.kr</b></sub><br /> |
+
+<br>
 
 ### 폴더 구조
 
@@ -82,14 +83,14 @@ lib
 
 ## 2. 왜 Flutter를 사용하였는가?
 
-1. Flutter에서 내장 카메라로 접근하여 촬영할 수 있는 기능을 제공한다.
-2. 이를 통해 삼성 기본 카메라에서 제공하는 스캔 및 편집 기능을 사용하고자 하였다.
-3. 촬영을 위한 임베디드 시스템 개발에 익숙한 팀원이 없었다.
+1. Flutter에서 **내장 카메라로 접근**하여 촬영할 수 있는 기능을 제공한다.
+2. 이를 통해 **삼성 기본 카메라에서 제공하는 스캔 및 편집 기능**을 사용하고자 하였다.
+3. 촬영을 위한 **임베디드 시스템 개발에 익숙한 팀원이 없었다.**
 
 
-> 하지만 아쉽게도 사용하고자 했던 삼성 카메라의 스캔 및 편집 기능은 **다른 어플을 통해 카메라로 접근하는 경우 사용할 수 없었다.**
+> 하지만 아쉽게도 사용하고자 했던 삼성 카메라의 스캔 및 편집 기능은 다른 어플을 통해 카메라로 접근하는 경우 사용할 수 없었다.
 > 
-> 이는 프로젝트 개발 중반에 발견되었고 **편집 기능을 제공하는 라이브러리**를 사용하여 이 문제를 **해결**하였다.
+> 이는 프로젝트 개발 중반에 발견되었고 편집 기능을 제공하는 라이브러리를 사용하여 이 문제를 해결하였다.
 
 <br>
 
