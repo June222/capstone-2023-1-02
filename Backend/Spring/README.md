@@ -1,7 +1,5 @@
 # SpringBoot DB(AWS) JPA
 
----
-
 <img src="https://img.shields.io/badge/Spring-yellow?style=for-the-badge&logo=spring&logoColor=white">
 <img src="https://img.shields.io/badge/SpringBoot-yellow?style=for-the-badge&logo=springboot&logoColor=white">
 <img src="https://img.shields.io/badge/JAVA-black?style=for-the-badge&logo=java&logoColor=white">
@@ -11,8 +9,6 @@ aws mysql DB와 연동하여 Image 데이터들을 관리하는 API <br>
 
 ## 요약
 
----
-
 프로젝트를 진행하며 아래 내용 등을 깨달을 수 있는 좋은 기회가 되었다.
 
 > 1. 서버 측에서 데이터를 관리하는 방법
@@ -21,7 +17,6 @@ aws mysql DB와 연동하여 Image 데이터들을 관리하는 API <br>
 
 ## 목차 (이동)
 
----
 [1. 프로젝트 설명](#1-프로젝트-설명)
 
 [2. 스프링을 쓴 이유](#2-spring을-왜-사용하였는가)
@@ -35,7 +30,6 @@ aws mysql DB와 연동하여 Image 데이터들을 관리하는 API <br>
 
 ## 1. 프로젝트 설명
 
----
 
 ![JPA 구조도](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FrnHpB%2Fbtq0XQbWnhR%2FGR7kMPOkxGEuuw2qzrkcK0%2Fimg.png)
 
@@ -53,7 +47,6 @@ aws mysql DB와 연동하여 Image 데이터들을 관리하는 API <br>
 
 ## 2. Spring을 왜 사용하였는가?
 
----
 
 졸업 과제 이전에 Spring 부트캠프가 학교에서 진행되었다. mysql에 workbench를 통해 데이터를 직접 저장해보며 느꼈던 불편함들을 해소해주는 spring framework에 큰 매력을 느꼈고,
 이를 꼭 졸업과제에서 써보고자 하였다. <br>
@@ -66,7 +59,6 @@ aws mysql DB와 연동하여 Image 데이터들을 관리하는 API <br>
 
 ## 3. 사용 방법 (배포 예정)
 
----
 
 ## 중요 - json 데이터 형식
 - dateTime의 형식은 "YYYY-MM-DD hh:mm:ss" 이다. 
@@ -125,7 +117,6 @@ aws mysql DB와 연동하여 Image 데이터들을 관리하는 API <br>
 
 ## 4. 팀원 및 참고 자료
 
----
 
 ### 기여한 팀원
 
@@ -147,6 +138,5 @@ https://github.com/codingspecialist/junit-bank-class
 
 ## 5. 라이센스
 
----
 
 MIT License
