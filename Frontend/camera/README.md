@@ -122,7 +122,7 @@ lib
 <table>
   <tbody>
     <tr>
-      <td align="center"><a href="https://github.com/June222"><img src="https://github.com/pnucse-capstone/capstone-2023-1-02/assets/76769044/e8eba3b2-7097-42fc-bb5a-61bfc2872998" width="200px;" alt=""/><br /><sub><b>FE, BE 팀장 : 강준우</b>(github)</sub></a><br /><sub><b>jangtai4@pusan.ac.kr</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/June222"><img src="https://github.com/pnucse-capstone/capstone-2023-1-02/assets/76769044/e8eba3b2-7097-42fc-bb5a-61bfc2872998" width="200px;" alt=""/><br /><sub><b>FE, BE 팀장 : 강준우</b>(github)</sub></a><br /><sub><b>jangtai4@pusan.ac.kr</b></sub><br /></td>
   </tbody>
 </table>
 
