@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ipad/dcggan_widget.dart';
+import 'package:ipad/dcgan_widget.dart';
 
 class DcganPage extends StatelessWidget {
   final String flawNumber;
