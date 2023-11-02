@@ -35,8 +35,8 @@
  ┃ ┃ ┃ ┃ ┣ 📂discriminator_model
  ┃ ┃ ┃ ┃ ┗ 📂generator_model
  ┃ ┃ ┃ ┗ 📂8x8
- ┃ ┃ ┃ ┃ ┣ 📂discriminator_model
- ┃ ┃ ┃ ┃ ┗ 📂generator_model
+ ┃ ┃ ┃   ┣ 📂discriminator_model
+ ┃ ┃ ┃   ┗ 📂generator_model
  ┃ ┃ ┗ 📂source-code
  ┃ ┃   ┗ 📜PGGAN.ipynb
  ┃ ┗ 📜GAN_utils.ipynb
