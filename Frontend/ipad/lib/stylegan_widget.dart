@@ -46,7 +46,7 @@ class stylegan_widget extends StatelessWidget {
                       height: 20,
                     ),
                     const Text(
-                      '      해상도 256x156',
+                      '      해상도 256x256',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 25,
