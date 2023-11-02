@@ -10,7 +10,7 @@ class styleganPage extends StatelessWidget {
   Widget build(BuildContext context) {
     String messagePath = "assets/defect1_message.png";
     String realImagePath = "assets/defect1_real.png";
-    String fakeImagePath = "assets/defect1_fake.png";
+    String fakeImagePath = "assets/defect1_fake_stylegan.png";
     // flawNumber에 따라 다른 이미지 경로 생성
     if (flawNumber == "결함 2번") {
       messagePath = "assets/defect2_message.png";

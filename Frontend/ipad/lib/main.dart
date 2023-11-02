@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ipad/dcgan_page.dart';
 import 'package:ipad/dcggan_widget.dart';
 import 'package:ipad/stylegan_page.dart';
+import 'package:ipad/stylegan_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -313,6 +314,95 @@ class MyHomePage extends StatelessWidget {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        // '결함 3번' 버튼이 클릭되었을 때의 동작
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Scaffold(
+                                    appBar: AppBar(
+                                      flexibleSpace: Container(
+                                        padding: const EdgeInsets.only(
+                                            left: 50, top: 25), // 왼쪽 여백 설정
+                                        alignment: Alignment.centerLeft,
+                                        child: const Text(
+                                          'StyleGAN',
+                                          style: TextStyle(
+                                            color:
+                                                Color.fromRGBO(17, 155, 255, 1),
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                      backgroundColor: Colors.black,
+                                      leading: IconButton(
+                                        icon: const Icon(
+                                          Icons.arrow_back,
+                                          color:
+                                              Color.fromRGBO(17, 155, 255, 1),
+                                        ),
+                                        onPressed: () {
+                                          Navigator.pop(context);
+                                        },
+                                      ),
+                                    ),
+                                    backgroundColor: Colors.black,
+                                    body: const SingleChildScrollView(
+                                      child: Column(
+                                        children: [
+                                          stylegan_widget(
+                                              flawNumber: '결함 1번',
+                                              messagePath:
+                                                  "assets/defect1_message.png",
+                                              realImagePath:
+                                                  "assets/defect1_real.png",
+                                              fakeImagePath:
+                                                  "assets/defect1_fake_stylegan.png"),
+                                          SizedBox(
+                                            height: 50,
+                                          ),
+                                          stylegan_widget(
+                                              flawNumber: '결함 2번',
+                                              messagePath:
+                                                  "assets/defect2_message.png",
+                                              realImagePath:
+                                                  "assets/defect2_real.png",
+                                              fakeImagePath:
+                                                  "assets/defect2_fake_stylegan.png"),
+                                          SizedBox(
+                                            height: 50,
+                                          ),
+                                          stylegan_widget(
+                                              flawNumber: '결함 4번',
+                                              messagePath:
+                                                  "assets/defect4_message.png",
+                                              realImagePath:
+                                                  "assets/defect4_real.png",
+                                              fakeImagePath:
+                                                  "assets/defect4_fake_stylegan.png"),
+                                        ],
+                                      ),
+                                    ),
+                                  )),
+                        );
+                      },
+                      child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          '한눈에 보기🔍',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 28,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
