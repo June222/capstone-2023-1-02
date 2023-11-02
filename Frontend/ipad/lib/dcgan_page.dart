@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class SecondPage extends StatelessWidget {
+class DcganPage extends StatelessWidget {
   final String flawNumber;
 
-  const SecondPage(this.flawNumber, {super.key});
+  const DcganPage(this.flawNumber, {super.key});
 
   @override
   Widget build(BuildContext context) {
