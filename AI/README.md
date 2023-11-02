@@ -50,6 +50,18 @@
  ┃ ┃ ┃   ┗ 📂generator_model
  ┃ ┃ ┗ 📂source-code
  ┃ ┃   ┗ 📜PGGAN.ipynb
+ ┃ ┣ 📂StyleGAN
+ ┃ ┃ ┣ 📂defect1-images 
+ ┃ ┃ ┃ ┗ 📂fakeimages
+ ┃ ┃ ┣ 📂defect2-images
+ ┃ ┃ ┃ ┗ 📂fakeimages
+ ┃ ┃ ┣ 📂defect3-images
+ ┃ ┃ ┃ ┗ 📂fakeimages
+ ┃ ┃ ┣ 📂source-code 
+ ┃ ┃ ┃ ┣ 📜StyleGAN2_ADA_defect1.ipynb
+ ┃ ┃ ┃ ┣ 📜StyleGAN2_ADA_defect2.ipynb
+ ┃ ┃ ┃ ┗ 📜StyleGAN2_ADA_defect3.ipynb
+ ┃ ┃ ┗ 📂stylegan2-ada-pytorch-main
  ┃ ┗ 📜GAN_utils.ipynb
  ┃
  ┣ 📂Semantic-Segmentation // 이미지 불량 검출 모델 폴더 
