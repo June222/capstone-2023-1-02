@@ -9,7 +9,7 @@
 |강준우|김태경|여지수|
 |:---|:------|:------|
 |<img width="200" alt="스크린샷 2023-10-24 오후 2 28 02" src="https://github.com/pnucse-capstone/capstone-2023-1-02/assets/76769044/e8eba3b2-7097-42fc-bb5a-61bfc2872998">|<img width="200" alt="스크린샷 2023-10-24 오후 2 26 32" src="https://github.com/pnucse-capstone/capstone-2023-1-02/assets/76769044/ffdb114c-06e0-45fb-8fe6-9a3f06ee19d0"/>|<img width="200" alt="스크린샷 2023-10-24 오후 2 30 54" src="https://github.com/pnucse-capstone/capstone-2023-1-02/assets/76769044/0cf44abf-47ae-415f-a02b-a3507e564035">|
-|• 어플리케이션 제작(Flutter) <br>• DBMS(mysql) 서버 구축<br>• DB 연동 Rest API(Spring JPA) 개발| • 데이터 분석 및 전처리<br>• 이미지 증강 모델(DCGAN, PGGAN) 연구<br>• 이미지 세그멘테이션 모델(U-Net) 연구<br>• 모델 학습을 위한 쿠버네티스 도커 환경 연구<br>• DBMS(mysql) 서버 구축 <br>• DB 연동 Rest API(Spring JPA) 개발|• 데이터 분석 및 전처리<br>• 이미지 분류 모델(CNN, ResNet, EfficientNet) 연구<br>• 이미지 세그멘테이션 모델(U-Net) 연구<br>• 이미지 증강 모델 (DCGAN) 연구<br>• 모델 서빙 Rest API(Flask) 개발<br>• figma를 활용하여 UI 및 UX 디자인|
+|• 촬영용 어플리케이션 제작(Flutter)<br>• 테블릿용 어플리케이션 제작(Flutter) <br>• DBMS(mysql) 서버 구축<br>• DB 연동 Rest API(Spring JPA) 개발| • 데이터 분석 및 전처리<br>• 이미지 증강 모델(DCGAN, PGGAN) 연구<br>• 이미지 세그멘테이션 모델(U-Net) 연구<br>• 모델 학습을 위한 쿠버네티스 도커 환경 연구<br>• DBMS(mysql) 서버 구축 <br>• DB 연동 Rest API(Spring JPA) 개발|• 데이터 분석 및 전처리<br>• 이미지 분류 모델(CNN, ResNet, EfficientNet) 연구<br>• 이미지 세그멘테이션 모델(U-Net) 연구<br>• 이미지 증강 모델 (DCGAN) 연구<br>• 모델 서빙 Rest API(Flask) 개발<br>• figma를 활용하여 UI 및 UX 디자인<br>• 아이패드용 어플리케이션 제작(Flutter)|
 | jangtai4@pusan.ac.kr| kimtg1997@pusan.ac.kr| duwltn1301@pusan.ac.kr|
 
 <br> 
