@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:ipad/cnn_page.dart';
 import 'package:ipad/dcgan_page.dart';
 import 'package:ipad/dcgan_widget.dart';
+import 'package:ipad/efficientNet_page.dart';
+import 'package:ipad/resnet_page.dart';
 import 'package:ipad/stylegan_page.dart';
 import 'package:ipad/stylegan_widget.dart';
 
@@ -327,7 +329,7 @@ class MyHomePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const cnnPage()),
+                              builder: (context) => const CnnPage()),
                         );
                       },
                       child: const Padding(
@@ -344,6 +346,51 @@ class MyHomePage extends StatelessWidget {
                     ),
                     const SizedBox(
                       width: 20,
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        // '결함 1번' 버튼이 클릭되었을 때의 동작
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ResnetPage()),
+                        );
+                      },
+                      child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          'ResNet',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        // '결함 1번' 버튼이 클릭되었을 때의 동작
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const EfficientNetPage()),
+                        );
+                      },
+                      child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          'EfficientNet',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
                     ),
                   ],
                 )

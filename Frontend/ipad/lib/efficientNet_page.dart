@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CnnPage extends StatelessWidget {
-  const CnnPage({super.key});
+class EfficientNetPage extends StatelessWidget {
+  const EfficientNetPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class CnnPage extends StatelessWidget {
           padding: const EdgeInsets.only(left: 50, top: 25), // 왼쪽 여백 설정
           alignment: Alignment.centerLeft,
           child: const Text(
-            'CNN',
+            'EfficientNet',
             style: TextStyle(
               color: Color.fromRGBO(17, 155, 255, 1),
               fontSize: 20,
