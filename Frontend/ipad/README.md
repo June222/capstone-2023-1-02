@@ -11,7 +11,9 @@
 * 이미지 확대 가능
 
 ![결함1](https://github.com/pnucse-capstone/capstone-2023-1-02/assets/76769044/ba7e0fde-6aef-40ef-b5e6-070fc6a26e45)
-![stylegan](https://github.com/pnucse-capstone/capstone-2023-1-02/assets/76769044/da0a7f6c-98af-4cb4-ac74-7cdffe57af8c)
+
+
+![stylegan2](https://github.com/pnucse-capstone/capstone-2023-1-02/assets/76769044/178dd7fc-186a-45fc-a7bd-8b8313529b85)
 
 
 2. 전처리 기법 및 모델 성능 비교
