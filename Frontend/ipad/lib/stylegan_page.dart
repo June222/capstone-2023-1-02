@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:ipad/dcggan_widget.dart';
+import 'package:ipad/stylegan_widget.dart';
 
-class DcganPage extends StatelessWidget {
+class styleganPage extends StatelessWidget {
   final String flawNumber;
 
-  const DcganPage(this.flawNumber, {super.key});
+  const styleganPage(this.flawNumber, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,12 +15,12 @@ class DcganPage extends StatelessWidget {
     if (flawNumber == "결함 2번") {
       messagePath = "assets/defect2_message.png";
       realImagePath = "assets/defect2_real.png";
-      fakeImagePath = "assets/defect2_fake.png";
+      fakeImagePath = "assets/defect2_fake_stylegan.png";
     }
     if (flawNumber == "결함 4번") {
       messagePath = "assets/defect4_message.png";
       realImagePath = "assets/defect4_real.png";
-      fakeImagePath = "assets/defect4_fake.png";
+      fakeImagePath = "assets/defect4_fake_stylegan.png";
     }
 
     return Scaffold(
@@ -29,7 +29,7 @@ class DcganPage extends StatelessWidget {
           padding: const EdgeInsets.only(left: 50, top: 25), // 왼쪽 여백 설정
           alignment: Alignment.centerLeft,
           child: const Text(
-            'DCGAN',
+            'StyleGAN',
             style: TextStyle(
               color: Color.fromRGBO(17, 155, 255, 1),
               fontSize: 20,
@@ -48,7 +48,7 @@ class DcganPage extends StatelessWidget {
           },
         ),
       ),
-      body: dcggan_widget(
+      body: stylegan_widget(
           flawNumber: flawNumber,
           messagePath: messagePath,
           realImagePath: realImagePath,
