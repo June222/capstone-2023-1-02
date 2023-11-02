@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ipad/gan_page.dart';
+import 'package:ipad/dcgan_page.dart';
+import 'package:ipad/pggan_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -73,7 +74,7 @@ class MyHomePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const SecondPage('결함 1번')),
+                              builder: (context) => const DcganPage('결함 1번')),
                         );
                       },
                       child: const Padding(
@@ -97,7 +98,7 @@ class MyHomePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const SecondPage('결함 2번')),
+                              builder: (context) => const DcganPage('결함 2번')),
                         );
                       },
                       child: const Padding(
@@ -121,7 +122,7 @@ class MyHomePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const SecondPage('결함 4번')),
+                              builder: (context) => const DcganPage('결함 4번')),
                         );
                       },
                       child: const Padding(
@@ -161,7 +162,7 @@ class MyHomePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const SecondPage('결함 1번')),
+                              builder: (context) => const PgganPage('결함 1번')),
                         );
                       },
                       child: const Padding(
@@ -185,7 +186,7 @@ class MyHomePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const SecondPage('결함 2번')),
+                              builder: (context) => const PgganPage('결함 2번')),
                         );
                       },
                       child: const Padding(
@@ -209,7 +210,7 @@ class MyHomePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const SecondPage('결함 4번')),
+                              builder: (context) => const PgganPage('결함 4번')),
                         );
                       },
                       child: const Padding(
