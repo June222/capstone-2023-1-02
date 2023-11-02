@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ipad/cnn_page.dart';
+import 'package:ipad/flow_page.dart';
 import 'package:ipad/dcgan_page.dart';
 import 'package:ipad/dcgan_widget.dart';
-import 'package:ipad/efficientNet_page.dart';
-import 'package:ipad/resnet_page.dart';
 import 'package:ipad/stylegan_page.dart';
 import 'package:ipad/stylegan_widget.dart';
 
@@ -44,7 +42,7 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 150,
+                height: 40,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -309,7 +307,7 @@ class MyHomePage extends StatelessWidget {
                     height: 40,
                   ),
                   const Text(
-                    '✔️ 결함 분류 모델',
+                    '✔️ 데이터 전처리 + 결함 분류 모델',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 40,
@@ -319,85 +317,52 @@ class MyHomePage extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  Row(
+                  Row(children: [
+                    const SizedBox(
+                      width: 40,
+                    ),
+                    Image.asset(
+                      "assets/main_flow.png",
+                      width: 600,
+                      fit: BoxFit.cover, // 이미지가 지정한 크기에 맞게 조절되도록 함
+                    ),
+                    const SizedBox(
+                      width: 100,
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const CnnPage()),
+                        );
+                      },
+                      child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          '흐 름 도',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ]),
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      const SizedBox(
+                      SizedBox(
                         width: 50,
                       ),
-                      ElevatedButton(
-                        onPressed: () {
-                          // '결함 1번' 버튼이 클릭되었을 때의 동작
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const CnnPage()),
-                          );
-                        },
-                        child: const Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Text(
-                            'CNN',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(
+                      SizedBox(
                         width: 20,
-                      ),
-                      ElevatedButton(
-                        onPressed: () {
-                          // '결함 1번' 버튼이 클릭되었을 때의 동작
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const ResnetPage()),
-                          );
-                        },
-                        child: const Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Text(
-                            'ResNet',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 20,
-                      ),
-                      ElevatedButton(
-                        onPressed: () {
-                          // '결함 1번' 버튼이 클릭되었을 때의 동작
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const EfficientNetPage()),
-                          );
-                        },
-                        child: const Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Text(
-                            'EfficientNet',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
                       ),
                     ],
                   ),
                   const SizedBox(
-                    height: 150,
+                    height: 10,
                   ),
                   const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
