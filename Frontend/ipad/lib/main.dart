@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ipad/cnn_page.dart';
 import 'package:ipad/dcgan_page.dart';
 import 'package:ipad/dcgan_widget.dart';
 import 'package:ipad/stylegan_page.dart';
@@ -57,231 +58,251 @@ class MyHomePage extends StatelessWidget {
                   height: 20,
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    const Text(
-                      '     🐰 DCGAN 생성 결과   ➞',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                      ),
+                    Image.asset(
+                      "assets/chart.png",
+                      width: 300,
+                      fit: BoxFit.cover, // 이미지가 지정한 크기에 맞게 조절되도록 함
                     ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    ElevatedButton(
-                      onPressed: () {
-                        // '결함 1번' 버튼이 클릭되었을 때의 동작
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const DcganPage('결함 1번')),
-                        );
-                      },
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          '결함 1번',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                          ),
+                    Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            const Text(
+                              '🐰 DCGAN  ➞',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 30,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 20,
+                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                // '결함 1번' 버튼이 클릭되었을 때의 동작
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const DcganPage('결함 1번')),
+                                );
+                              },
+                              child: const Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  '결함 1번',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 20,
+                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                // '결함 2번' 버튼이 클릭되었을 때의 동작
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const DcganPage('결함 2번')),
+                                );
+                              },
+                              child: const Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  '결함 2번',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 20,
+                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                // '결함 3번' 버튼이 클릭되었을 때의 동작
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const DcganPage('결함 4번')),
+                                );
+                              },
+                              child: const Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  '결함 4번',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 20,
+                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                // '결함 3번' 버튼이 클릭되었을 때의 동작
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const dcgan_all()),
+                                );
+                              },
+                              child: const Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  '한눈에 🔍',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    ElevatedButton(
-                      onPressed: () {
-                        // '결함 2번' 버튼이 클릭되었을 때의 동작
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const DcganPage('결함 2번')),
-                        );
-                      },
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          '결함 2번',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                          ),
+                        const SizedBox(
+                          height: 20,
                         ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    ElevatedButton(
-                      onPressed: () {
-                        // '결함 3번' 버튼이 클릭되었을 때의 동작
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const DcganPage('결함 4번')),
-                        );
-                      },
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          '결함 4번',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                          ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            const Text(
+                              '    🐰 StyleGAN  ➞',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 30,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 20,
+                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                // '결함 1번' 버튼이 클릭되었을 때의 동작
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const styleganPage('결함 1번')),
+                                );
+                              },
+                              child: const Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  '결함 1번',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 20,
+                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                // '결함 2번' 버튼이 클릭되었을 때의 동작
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const styleganPage('결함 2번')),
+                                );
+                              },
+                              child: const Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  '결함 2번',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 20,
+                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                // '결함 3번' 버튼이 클릭되었을 때의 동작
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const styleganPage('결함 4번')),
+                                );
+                              },
+                              child: const Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  '결함 4번',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 20,
+                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                // '결함 3번' 버튼이 클릭되었을 때의 동작
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const stylegan_all()),
+                                );
+                              },
+                              child: const Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  '한눈에 🔍',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    ElevatedButton(
-                      onPressed: () {
-                        // '결함 3번' 버튼이 클릭되었을 때의 동작
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const dcgan_all()),
-                        );
-                      },
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          '한눈에 보기🔍',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 28,
-                            fontWeight: FontWeight.bold,
-                          ),
+                        const SizedBox(
+                          height: 50,
                         ),
-                      ),
+                      ],
                     ),
                   ],
                 ),
                 const SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    const Text(
-                      '     🐰 StyleGAN 생성 결과   ➞',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    ElevatedButton(
-                      onPressed: () {
-                        // '결함 1번' 버튼이 클릭되었을 때의 동작
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  const styleganPage('결함 1번')),
-                        );
-                      },
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          '결함 1번',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    ElevatedButton(
-                      onPressed: () {
-                        // '결함 2번' 버튼이 클릭되었을 때의 동작
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  const styleganPage('결함 2번')),
-                        );
-                      },
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          '결함 2번',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    ElevatedButton(
-                      onPressed: () {
-                        // '결함 3번' 버튼이 클릭되었을 때의 동작
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  const styleganPage('결함 4번')),
-                        );
-                      },
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          '결함 4번',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    ElevatedButton(
-                      onPressed: () {
-                        // '결함 3번' 버튼이 클릭되었을 때의 동작
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const stylegan_all()),
-                        );
-                      },
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          '한눈에 보기🔍',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 28,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 50,
+                  height: 40,
                 ),
                 const Text(
                   '✔️ 결함 분류 모델',
@@ -306,8 +327,7 @@ class MyHomePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) =>
-                                  const styleganPage('결함 1번')),
+                              builder: (context) => const cnnPage()),
                         );
                       },
                       child: const Padding(
