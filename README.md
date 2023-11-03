@@ -34,7 +34,7 @@
 
 
 
-## 4. 소개 및 시연 영상
+## 4. 동작 과정
 
 ### 1) 소개
 
@@ -50,11 +50,11 @@
   - 데이터 베이스로 전송
 - 태블릿용
   - 데이터베이스로부터 load
-  - 그래프 모드 (추후 예정)
+  - 그래프 모드 
 
 <br>
 
-### 2) 시연영상
+### 2) 동작 영상
 
 - #### 촬영용 App
 
@@ -68,7 +68,6 @@
 
 <br> 
 
-(추후 예정)
 
 ![그래프 모드 작동](https://github.com/pnucse-capstone/capstone-2023-1-02/assets/38900003/104cf387-dede-489e-bb4a-b0169a3270d1)
 
@@ -112,3 +111,9 @@
 2. 데이터 전처리와 결함 분류 모델의 흐름을 확인한다.
 3. 스크롤하여 나오는 철강 이미지들을 촬영용 App으로 찍어서 결과를 태블릿 App으로 확인한다.
 
+https://www.youtube.com/watch?v=neZY_eSCWkQ&t=45s
+
+
+## 6. 시연 소개 영상 
+
+[![Video Label](https://user-images.githubusercontent.com/76769044/280241586-c29d795f-caa5-4af7-b6ef-e2f0e92deb86.png)](https://youtu.be/neZY_eSCWkQ&t=45s)
