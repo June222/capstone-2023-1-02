@@ -1,8 +1,6 @@
 # SpringBoot DB(AWS) JPA
 
-<img src="https://img.shields.io/badge/Spring-yellow?style=for-the-badge&logo=spring&logoColor=white">
-<img src="https://img.shields.io/badge/SpringBoot-yellow?style=for-the-badge&logo=springboot&logoColor=white">
-<img src="https://img.shields.io/badge/JAVA-black?style=for-the-badge&logo=java&logoColor=white">
+<img src="https://img.shields.io/badge/Spring-yellow?style=for-the-badge&logo=spring&logoColor=white"><img src="https://img.shields.io/badge/SpringBoot-yellow?style=for-the-badge&logo=springboot&logoColor=white"><img src="https://img.shields.io/badge/JAVA-black?style=for-the-badge&logo=java&logoColor=white">
 
 aws mysql DB와 연동하여 Image 데이터들을 관리하는 API <br>
 
