@@ -3,6 +3,18 @@
 💡 _Steel See_ 는 철강 이미지에서 불량 부분을 검출하는 서비스 입니다.<br>
 💡 자체적으로 개발한 불량 검출 인공지능 모델을 사용하여 앱 서비스 형태로 배포하였습니다.<br>
 
+## README 링크
+
+➡️ AI 모델: [링크](https://github.com/June222/capstone-2023-1-02/blob/main/AI/README.md)
+
+➡️ Spring Boot: [링크](https://github.com/June222/capstone-2023-1-02/blob/main/Backend/Spring/README.md)
+
+➡️ Camera App: [링크](https://github.com/June222/capstone-2023-1-02/tree/main/Frontend/camera)
+
+➡️ Tablet App: [링크](https://github.com/June222/capstone-2023-1-02/tree/main/Frontend/tablet)
+
+➡️ IPad App: [링크](https://github.com/June222/capstone-2023-1-02/blob/main/Frontend/ipad/README.md)
+
 <br> 
 
 ## 2. 팀 소개
