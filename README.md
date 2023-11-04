@@ -73,18 +73,22 @@
 
 - #### 촬영용 App
 
+
 ![촬영 작동 1](https://github.com/pnucse-capstone/capstone-2023-1-02/assets/38900003/50a9d5a9-b219-4995-940f-19c0660757ae)
 
 <br>
 
 - #### 태블릿 App
   
-![작동 리드미 영상](https://github.com/pnucse-capstone/capstone-2023-1-02/assets/38900003/813c7099-fd52-49a1-9464-e0a1de18b792)
+
+![대쉬보드모드](https://github.com/June222/capstone-2023-1-02/assets/38900003/a0db8a17-671f-4da3-9548-b482f30083d9)
 
 <br> 
 
+![그래프모드](https://github.com/June222/capstone-2023-1-02/assets/38900003/97e9af17-62f3-4761-83e8-ad175bda8376)
 
-![그래프 모드 작동](https://github.com/pnucse-capstone/capstone-2023-1-02/assets/38900003/104cf387-dede-489e-bb4a-b0169a3270d1)
+
+
 
 - #### 아이패드 App
 
