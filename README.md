@@ -1,7 +1,25 @@
 ## 1. 프로젝트 소개
+
+# 🥈 PNU 정보컴퓨터공학과 졸업과제 은상 수상!!
+
 # _Steel See_
+
+
+
 💡 _Steel See_ 는 철강 이미지에서 불량 부분을 검출하는 서비스 입니다.<br>
 💡 자체적으로 개발한 불량 검출 인공지능 모델을 사용하여 앱 서비스 형태로 배포하였습니다.<br>
+
+## README 링크
+
+➡️ AI 모델: [링크](https://github.com/June222/capstone-2023-1-02/blob/main/AI/README.md)
+
+➡️ Spring Boot: [링크](https://github.com/June222/capstone-2023-1-02/blob/main/Backend/Spring/README.md)
+
+➡️ Camera App: [링크](https://github.com/June222/capstone-2023-1-02/tree/main/Frontend/camera)
+
+➡️ Tablet App: [링크](https://github.com/June222/capstone-2023-1-02/tree/main/Frontend/tablet)
+
+➡️ IPad App: [링크](https://github.com/June222/capstone-2023-1-02/blob/main/Frontend/ipad/README.md)
 
 <br> 
 
@@ -9,7 +27,7 @@
 |강준우|김태경|여지수|
 |:---|:------|:------|
 |<img width="200" alt="스크린샷 2023-10-24 오후 2 28 02" src="https://github.com/pnucse-capstone/capstone-2023-1-02/assets/76769044/e8eba3b2-7097-42fc-bb5a-61bfc2872998">|<img width="200" alt="스크린샷 2023-10-24 오후 2 26 32" src="https://github.com/pnucse-capstone/capstone-2023-1-02/assets/76769044/ffdb114c-06e0-45fb-8fe6-9a3f06ee19d0"/>|<img width="200" alt="스크린샷 2023-10-24 오후 2 30 54" src="https://github.com/pnucse-capstone/capstone-2023-1-02/assets/76769044/0cf44abf-47ae-415f-a02b-a3507e564035">|
-|• 촬영용 어플리케이션 제작(Flutter)<br>• 테블릿용 어플리케이션 제작(Flutter) <br>• DBMS(mysql) 서버 구축<br>• DB 연동 Rest API(Spring JPA) 개발| • 데이터 분석 및 전처리<br>• 이미지 증강 모델(DCGAN, PGGAN) 연구<br>• 이미지 세그멘테이션 모델(U-Net) 연구<br>• 모델 학습을 위한 쿠버네티스 도커 환경 연구<br>• DBMS(mysql) 서버 구축 <br>• DB 연동 Rest API(Spring JPA) 개발|• 데이터 분석 및 전처리<br>• 이미지 분류 모델(CNN, ResNet, EfficientNet) 연구<br>• 이미지 세그멘테이션 모델(U-Net) 연구<br>• 이미지 증강 모델 (DCGAN) 연구<br>• 모델 서빙 Rest API(Flask) 개발<br>• figma를 활용하여 UI 및 UX 디자인<br>• 아이패드용 어플리케이션 제작(Flutter)|
+|• 촬영용 어플리케이션 제작(Flutter)<br>• 테블릿용 어플리케이션 제작(Flutter) <br>• DBMS(mysql) 서버 구축<br>• DB 연동 Rest API(Spring JPA) 개발| • 데이터 분석 및 전처리<br>• 이미지 증강 모델(DCGAN, PGGAN, StyleGAN) 연구<br>• 이미지 세그멘테이션 모델(U-Net) 연구<br>• 모델 학습을 위한 쿠버네티스 도커 환경 연구<br>• DBMS(mysql) 서버 구축 <br>• DB 연동 Rest API(Spring JPA) 개발|• 데이터 분석 및 전처리<br>• 이미지 분류 모델(CNN, ResNet, EfficientNet) 연구<br>• 이미지 세그멘테이션 모델(U-Net) 연구<br>• 이미지 증강 모델 (DCGAN) 연구<br>• 모델 서빙 Rest API(Flask) 개발<br>• figma를 활용하여 UI 및 UX 디자인<br>• 아이패드용 어플리케이션 제작(Flutter)|
 | jangtai4@pusan.ac.kr| kimtg1997@pusan.ac.kr| duwltn1301@pusan.ac.kr|
 
 <br> 
@@ -66,13 +84,23 @@
 <br>
 
 - #### 태블릿 App
-  
-![작동 리드미 영상](https://github.com/pnucse-capstone/capstone-2023-1-02/assets/38900003/813c7099-fd52-49a1-9464-e0a1de18b792)
+
+대쉬보드 모드
+
+    > 설정한 조건에 따른 이미지 데이터를 조회하고 관리하는 스크린
+
+![대쉬보드모드](https://github.com/June222/capstone-2023-1-02/assets/38900003/a0db8a17-671f-4da3-9548-b482f30083d9)
 
 <br> 
 
+그래프 모드
+  
+    > 설정한 날짜에 따른 이미지 데이터를 그래프 형식으로 조회하는 스크린
 
-![그래프 모드 작동](https://github.com/pnucse-capstone/capstone-2023-1-02/assets/38900003/104cf387-dede-489e-bb4a-b0169a3270d1)
+![그래프모드](https://github.com/June222/capstone-2023-1-02/assets/38900003/97e9af17-62f3-4761-83e8-ad175bda8376)
+
+
+
 
 - #### 아이패드 App
 
