@@ -79,17 +79,23 @@
 
 - #### 촬영용 App
 
-
 ![촬영 작동 1](https://github.com/pnucse-capstone/capstone-2023-1-02/assets/38900003/50a9d5a9-b219-4995-940f-19c0660757ae)
 
 <br>
 
 - #### 태블릿 App
-  
+
+대쉬보드 모드
+
+    > 설정한 조건에 따른 이미지 데이터를 조회하고 관리하는 스크린
 
 ![대쉬보드모드](https://github.com/June222/capstone-2023-1-02/assets/38900003/a0db8a17-671f-4da3-9548-b482f30083d9)
 
 <br> 
+
+그래프 모드
+  
+    > 설정한 날짜에 따른 이미지 데이터를 그래프 형식으로 조회하는 스크린
 
 ![그래프모드](https://github.com/June222/capstone-2023-1-02/assets/38900003/97e9af17-62f3-4761-83e8-ad175bda8376)
 
