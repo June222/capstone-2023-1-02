@@ -32,7 +32,7 @@ public class SteelService {
     }
 
     @Transactional
-    public List<GetRespDto> getData(DashboardReqDto requestDTO){
+    public List<GetRespDto> getDashboardData(DashboardReqDto requestDTO){
         // t1, t2 조회 시작 날짜, 종료 날짜
         LocalDateTime t1 = CustomDateUtil.toLocalDataTimeFormat(requestDTO.getLocalDateTimeStart());
         LocalDateTime t2 = CustomDateUtil.toLocalDataTimeFormat(requestDTO.getLocalDateTimeEnd());
@@ -77,7 +77,7 @@ public class SteelService {
 
     @Transactional
     // graph 모드에서의 영속화
-    public List<GraphRespDto> graphRespDtoList(GraphReqDto requestDTO){
+    public List<GraphRespDto> getGraphRespDtoList(GraphReqDto requestDTO){
         LocalDateTime t1 = CustomDateUtil.toLocalDataTimeFormat(requestDTO.getLocalDateTimeStart());
         LocalDateTime t2 = CustomDateUtil.toLocalDataTimeFormat(requestDTO.getLocalDateTimeEnd());
         List<Steel> listFoundPS = steelRepository.findSteelsByLocalDateTime(t1, t2);
